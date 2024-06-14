@@ -2,32 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: #fbfafc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.nav-slide{
+  
+}
+.slide-text-background{
+  background-color: linear-gradient(#a23b49, #6E2473);
+  height: 50px;
+  animation-name: text-background;
+  animation-duration:10s;
+  animation-delay: 0.2;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+.text-bgg{
+  background:orange;
+  animation-name: text-color;
+  animation-duration:10s;
+  animation-delay: 0.2;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes text-color {
+  from{
+    background:#c44b2e;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+ to{
+    background: white;
   }
+  from{
+    background: white;
+  }
+  to{
+    background: #c44b2e;
+  }
+
+
+
+}
+
+@keyframes text-background {
+  0% {
+    width: 0px;
+    background-color: #6E2473;
+  }
+
+  50%{
+    width: 400px;
+    background-color: #a23b49;
+  }
+  100%{
+    width: 0px;
+  }
+
 }
