@@ -2,10 +2,10 @@
 import Image from "next/image"
 import Button from "./button"
 
-export default function SingleServiceCard({item, image, background='#ffff', headingClass, button=true}) {
+export default function SingleServiceCard({item, image, background='#ffff', headingClass, button=true, width=80}) {
   return (
     <div className={`w-[250px] flex justify-around items-center gap-3 flex-col bg-[${background}] rounded-[30px] p-5 text-center cursor-pointer hover:shadow-lg shadow-md`}>
-        <Image src={image} width={80} alt='a source image'/>
+        <Image src={image} width={width} alt='a source image'/>
         <p>{item.para}</p>
         <h1 className={`${headingClass} ' ' font-bold `}>{item.title}</h1>
         <p>{item.description}</p>

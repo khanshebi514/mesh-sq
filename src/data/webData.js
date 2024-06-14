@@ -117,6 +117,25 @@ export const growthCard = [
 
 ]
 
+export const ourWork = [
+    {
+        id:1,
+        "title": 'House of Hina',
+        "description": 'House of HINA A blends EAST and West in a fusion of styles. Offering quality, fine stitching, and affordable pricing our collectoion suits...'
+    },
+
+    {
+        id:1,
+        "title": 'Meds Dental',
+        "description": 'Meds Dental specializes in efficient coding and billing services, ensuring prompt and accurate reimbursement for dental services...'
+    },
+
+    {
+        id:1,
+        "title": 'The PA Zone',
+        "description": 'We help and support both new and current PA students. You can reach out to us at any time during your journey. WE understand...'
+    }
+]
 export const WhyWorkWithUs = [
     { label: 'Understanding and Observing',
       text : "Understanding and observing your industry's intricacies is our prime approach. With our team's specialized knowledge and experience, we offer solutions proven to drive tangible results. Digging deep into unique requirements of your business at a professional level."

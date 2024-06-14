@@ -1,0 +1,43 @@
+'use client'
+import cursolImg_1 from '@/images/image-pa.webp';
+import cursolImg_2 from '@/images/image-meds.webp';
+import cursolImg_3 from '@/images/image-card.webp';
+import { Carousel } from 'antd';
+import SingleServiceCard from '../single-Service-card';
+import { ourWork } from '@/data/webData';
+import Image from 'next/image';
+
+export default function CursolComponent() {
+  return (
+        <Carousel arrows autoplay dots dotPosition='bottom' slidesPerRow={3} infinite className='flex justify-center flex-col md:flex-row p-5'>
+            <div className=''>
+                <SingleServiceCard item={ourWork[0]} image={cursolImg_1} width={300} />
+            </div>
+
+            <div className=''>
+            <SingleServiceCard item={ourWork[1]} image={cursolImg_2} width={300} />
+            </div>
+
+            <div className=''>
+            <SingleServiceCard item={ourWork[2]} image={cursolImg_3} width={300} />
+            </div>
+
+            <div className=''>
+            <SingleServiceCard item={ourWork[0]} image={cursolImg_1} width={300}  />
+            </div>
+
+            <div className=''>
+            <SingleServiceCard item={ourWork[1]} image={cursolImg_2} width={300} />
+            </div>
+
+            <div className=''>
+            <SingleServiceCard item={ourWork[2]} image={cursolImg_3} width={300} />
+            </div>
+
+            {/* <Image src={cursolImg_1}/>
+            <Image src={cursolImg_2}/>
+            <Image src={cursolImg_3}/> */}
+
+        </Carousel>
+  )
+}

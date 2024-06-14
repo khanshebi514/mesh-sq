@@ -1,6 +1,7 @@
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/ui/navigation-bar/navigation";
+import Footer from "@/ui/footer/footer";
 
 const roboto = Roboto({ 
   weight: ['400', '700', '100', '300' ,'500', '900'],
@@ -15,10 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.className}`}>
         
         <Navigation/>
         {children}
+        <Footer/>
+        
         </body>
     </html>
   );

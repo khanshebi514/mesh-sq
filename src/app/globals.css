@@ -20,6 +20,11 @@ body{
   animation-iteration-count: infinite;
 }
 
+.nightmode{
+  background-color: #2222;
+  color: white;
+}
+
 .text-bgg{
   background:orange;
   animation-name: text-color;
