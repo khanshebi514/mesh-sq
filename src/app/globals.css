@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  background-color: #fbfafc;
+  background-color: #f8f6fa;
 }
 
 .nav-slide{
@@ -55,7 +55,7 @@ body{
   }
 
   50%{
-    width: 400px;
+    width: 300px;
     background-color: #a23b49;
   }
   100%{
@@ -63,3 +63,9 @@ body{
   }
 
 }
+
+/* @media screen and (max-width: 480px) {
+  body {
+    font-size: 50%;
+  }
+} */

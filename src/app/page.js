@@ -1,8 +1,8 @@
-"use client";
+
+import Compaings from "@/ui/compaings";
 import Container from "@/ui/container";
 import Counter from "@/ui/counter";
 import MainHeader from "@/ui/main-header/main-header";
-import Navigation from "@/ui/navigation-bar/navigation";
 import ServiceWeProvide from "@/ui/serviceWeProvide";
 
 export default function Home() {
@@ -11,6 +11,8 @@ export default function Home() {
       <MainHeader />
       <Counter />
       <ServiceWeProvide/>
+      <Compaings/>
+      
     </Container>
   );
 }

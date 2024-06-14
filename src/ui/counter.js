@@ -1,11 +1,12 @@
+'use client'
 import CountUp from "react-countup";
 
 export default function Counter() {
 
-  const styling = {fontSize:'60px', color:'white', fontWeight:'bold'}
+  const styling = {fontSize:'2.5em', color:'white', fontWeight:'bold'}
   const paraStyle = 'text-md text-white'
   return (
-    <div className="w-[850px] flex md:flex-row flex-col justify-center text-wrap text-center gap-5 items-center bg-[#ff7526] rounded-[50px] h-[150px] m-auto p-5">
+    <div className="w-full flex flex-col md:flex-row justify-center text-wrap text-center gap-5 items-center bg-[#ff7526] rounded-[50px] md:h-[150px] m-auto p-5">
       <div>
         <CountUp start={0} suffix="+" end={150} style={styling}></CountUp>
         <p className={paraStyle}>Project completed Successfullu</p>

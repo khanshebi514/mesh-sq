@@ -1,9 +1,9 @@
-
+import image from '../images/image-33.webp'
 
 export const navItem  = [
     {
         key:1,
-        label:'home',
+        label:'Home',
         path:'/' || 'home' || 'HOME', 
     },
 
@@ -63,7 +63,59 @@ export const navItem  = [
 
 
 export const services = ['Carving the New Dimensions in the Digital Realm! Mesh Sq strives to revolutionize your brand engagement and digital face']
+export const serviceCard = [
+    {
+        id:1,
+        "images":'https://meshsq.com/_next/image?url=%2Fimages%2Fwe_provide%2Fimg3.png&w=64&q=75',
+        "title":'Automation',
+        "description": 'Transform Strategies Through Automation',
+    },
 
+    {
+        id:2,
+        "image":'https://meshsq.com/_next/image?url=%2Fimages%2Fwe_provide%2Fimg1.png&w=64&q=75',
+        "title":'Design',
+        "description": 'Enhance the Message of your Brand',
+    },
+
+    {
+        id:3,
+        "image":'https://meshsq.com/_next/image?url=%2Fimages%2Fwe_provide%2Fimg2.png&w=64&q=75',
+        "title":'Development',
+        "description": 'Your Strategic Business Move',
+        
+    },
+
+    {
+        id:4,
+        "image":'https://meshsq.com/_next/image?url=%2Fimages%2Fwe_provide%2Fimg5.png&w=64&q=75',
+        "title":'Degital Marketing',
+        "description": 'Connect the People Who Matter',
+
+    },
+
+]
+
+export const growthCard = [
+    {
+    "para" : "Our Content Marketing Campaigns have led to a",
+    "title": "60% increase",
+    "description" : 'in organic content engagement to establish your brand as an industry authority.',
+    },
+
+    {
+        "para" : "Experience a significant",
+        "title": "45% growth",
+        "description" : 'in leads generated through content marketing efforts, nurturing your sales pipeline.',
+ },
+    {
+        "para" : "Content marketing expertise has resulted in an impressive",
+        "title": "55% growth",
+        "description" : 'in organic website traffic, positioning your brand in front of a larger community',
+ },
+
+
+]
 
 export const WhyWorkWithUs = [
     { label: 'Understanding and Observing',
