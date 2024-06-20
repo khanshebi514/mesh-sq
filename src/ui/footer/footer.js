@@ -27,7 +27,7 @@ export default function Footer() {
                </div>
             </Col>
 
-            <Col sm={24} md={10} className="flex justify-center items-center text-center md:justify-around gap-10 flex-col md:flex-row w-full my-5">
+            <Col sm={24} md={10} className="flex justify-center text-center md:justify-around gap-10 flex-col md:flex-row w-full my-5">
                   <Col>
                   <h2 className="text-xl font-bold mb-6">Menu</h2>
                   <div className="link flex flex-col gap-5 text-lg">

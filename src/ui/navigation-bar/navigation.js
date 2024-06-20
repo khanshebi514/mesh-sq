@@ -3,13 +3,16 @@ import Image from "next/image";
 import logoImg from '@/images/logo.svg'
 import NavItem from "./nav-item";
 import Button from "../button";
-import {MoonOutlined, MenuOutlined, SunFilled } from '@ant-design/icons'
+import {MoonOutlined, MenuOutlined, SunFilled, CloseOutlined } from '@ant-design/icons'
 import { Col, Row } from "antd";
 import { useState } from "react";
+import Link from "next/link";
+import { navItem } from "@/data/webData";
 
 export default function Navigation() {
 
   const [nightMode, setNightMode] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false)
 
   const handleNightMode=()=>{
     setNightMode(prev=> !prev )
@@ -25,7 +28,17 @@ export default function Navigation() {
        <NavItem/>
       </Col>
       <Col sm={4} md={0}>
-      <MenuOutlined style={{fontSize:'25px'}}/>
+      <div className="relative">
+      {!mobileMenu ? <MenuOutlined style={{fontSize:'25px', cursor:'pointer'}} onClick={()=>{setMobileMenu(true)}} /> :  <CloseOutlined style={{fontSize:'25px', cursor:'pointer'}} onClick={()=>{setMobileMenu(false)}}/>}
+        {mobileMenu ?  <div className={`${mobileMenu ? 'mobileMenuOn' : " "}`}>
+        <ul className="flex flex-col absolute top-10 z-50 w-40 bg-[#4d148c] text-white p-5 gap-5">
+            {navItem.map((item)=>
+                <Link key={item.key} href={item.path} className={`font-bold text-md hover:text-orange-600 ${item.key === 2 ? "after:content-['▼'] hover:slide" : '' } `}>{item.label}</Link>
+            )}
+            </ul>
+        </div> : null}
+      </div>
+
       </Col>
 
       <Col sm={8} md={4}>
