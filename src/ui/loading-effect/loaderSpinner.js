@@ -1,12 +1,14 @@
-'use client'
-import { Spin } from "antd";
-import { useEffect, useState } from "react";
 
+import { LoadingOutlined } from "@ant-design/icons";
+import { Space, Spin } from "antd";
 
 export default function LoaderSpinner() {
   
   return (
-    <Spin size="large" style={{fontSize:'100px'}}>
-    </Spin>
+    <Space>
+        <Spin indicator={true} size="large">
+        </Spin>
+    </Space>
+    
   )
 }

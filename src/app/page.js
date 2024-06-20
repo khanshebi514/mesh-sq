@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      {isLoading ? <LoaderSpinner/> : <HomePage/>}
+      {isLoading ? <div className="w-full h-[100%] flex justify-center items-center absolute top-0 z-[999] bg-black"><LoaderSpinner/></div> : <HomePage/>}
     </>
   );
 }
