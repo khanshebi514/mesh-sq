@@ -3,7 +3,7 @@ import { Col, Row } from "antd";
 export default function WhyWorkWithUS() {
   return (
     <div className="w-full">
-        <Row className="w-full p-5 mt-5">
+        <Row className="w-full p-5 my-10">
             <Col span={24} className="flex justify-center flex-col items-center">
             <h1 className="font-bold text-3xl md:text-5xl text-[#4d148c]">Why Work With US</h1>
             <p className="font-normal text-lg mt-3">Master the art of building custom solutions regardless of company size or industry</p>
@@ -32,9 +32,9 @@ export default function WhyWorkWithUS() {
             <Col span={24} md={2}>
              <div className="relative md:w-[5px] md:h-[300px] w-[300px] h-[5px] mt-5 md:mt-0 bg-blue-950 rounded-lg">
                 <div className="absolute flex justify-around items-center md:flex-col w-full h-full">
-                <input type="radio" name="whyChoose" className="w-[40px] rounded-full border-2 border-stone-50"/>
-                <input type="radio" name="whyChoose" className="w-[40px] rounded-full border-2 border-stone-50"/>
-                <input type="radio" name="whyChoose" className="w-[40px] rounded-full border-2 border-stone-50"/>
+                <span className="w-[25px] h-[25px] rounded-full bg-orange-500 border-4 border-white"></span>
+                <span className="w-[25px] h-[25px] rounded-full bg-orange-500 border-4 border-white"></span>
+                <span className="w-[25px] h-[25px] rounded-full bg-orange-500 border-4 border-white"></span>
                 </div>
                
              </div>

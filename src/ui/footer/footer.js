@@ -13,8 +13,8 @@ export default function Footer() {
     }
   return (
     <div className="bg-[#eee7f5] text-center md:text-start">
-        <Row className="p-5" align={'middle'} justify={'space-between'}>
-            <Col sm={24} md={6} className="flex flex-col justify-center items-center md:items-start gap-5 border-b-2 border-b-[#742092] md:border-0">
+        <Row className="p-5" align={'stretch'} justify={'space-between'}>
+            <Col sm={24} md={6} className="flex flex-col justify-center items-center md:items-start gap-5 ">
                <Image src={logoImage} width={150} alt="a logo image of mesh Sq"/>
                <p className="text-lg">
                   A thriving digital marketing agency offering complete services for diverse businesses. Attract, convert, and generate more leads online with us!
@@ -25,40 +25,44 @@ export default function Footer() {
                <RiFacebookFill style={style}/>
                <RiLinkedinBoxFill style={style}/>
                </div>
+               <span className="border-b-2 border-b-[#742092] md:border-0 w-[100px] md:w-0" ></span>
             </Col>
 
-            <Col sm={24} md={10} className="flex justify-center text-center md:justify-around gap-10 flex-col md:flex-row w-full my-5">
-                  <Col>
+            <Col sm={24} md={10} className="flex justify-center text-center md:justify-around gap-10 flex-col items-center md:items-start md:flex-row w-full my-5">
+                  <Col >
                   <h2 className="text-xl font-bold mb-6">Menu</h2>
-                  <div className="link flex flex-col gap-5 text-lg">
+                  <div className="link flex flex-col gap-5 text-[1rem]">
                   <Link href='/'>Home</Link>
                   <Link href='/'>About</Link>
                   <Link href='/'>Carrier</Link>
                   <Link href='/'>Blog</Link>
                   <Link href='/'>Privacy</Link>
+                  <span className="border-b-2 border-b-[#742092] md:border-0 w-[100px] md:w-0" ></span>
                   </div>
                   
                   </Col>
-                  <Col>
+                  <Col >
                   <h2 className="text-xl font-bold mb-6">Services</h2>
-                  <div className="link flex flex-col gap-5 text-lg">
+                  <div className="link flex flex-col gap-5 text-[1rem]">
                   <Link href='/'>Automation</Link>
                   <Link href='/'>Design</Link>
                   <Link href='/'>Development</Link>
                   <Link href='/'>Digital Marketing</Link>
                   </div>
+                 
                  </Col>
+                 <span className="border-b-2 border-b-[#742092] md:border-0 w-[100px] md:w-0"></span>
             </Col>
 
-            <Col span={24} md={6} className="text-center md:text-start" >
+            <Col span={24} md={6} className="text-center md:text-start">
               <h2 className="text-xl font-bold mb-6">
                 Subscribe to Our Newsletter
               </h2>
               <div className="flex flex-col gap-2 md:w-[300px] justify-center items-center md:justify-start md:items-start">
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email" aria-required='true'>Email</label>
               <input type="text" placeholder="Enter your Email" id="email" className="py-2 px-1 rounded-lg border-[#742092] border-[1px] outline-none"/>
               </div>
-              <Button className='bg-[#742092] rounded-full mt-5 text-white' size={'medium'}>Subscribe Us</Button>
+              <Button className='bg-[#742092] rounded-full mt-5 border-2 border-[#742092] text-white px-2 hover:bg-white hover:text-black text-[1.2rem]' size={'medium'}>Subscribe Us</Button>
             </Col>
         </Row>
     

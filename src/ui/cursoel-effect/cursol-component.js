@@ -6,10 +6,11 @@ import { Carousel } from 'antd';
 import SingleServiceCard from '../single-Service-card';
 import { ourWork } from '@/data/webData';
 import Image from 'next/image';
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 
 export default function CursolComponent() {
   return (
-        <Carousel arrows autoplay dots dotPosition='bottom' slidesPerRow={3} infinite className='flex justify-center flex-col md:flex-row p-5'>
+        <Carousel nextArrow={<ArrowRightOutlined/>} prevArrow={<ArrowLeftOutlined/>} arrows autoplay dots dotPosition='bottom' slidesPerRow={3}  infinite className='flex justify-center flex-col md:flex-row p-5'>
             <div className=''>
                 <SingleServiceCard item={ourWork[0]} image={cursolImg_1} width={300} />
             </div>
