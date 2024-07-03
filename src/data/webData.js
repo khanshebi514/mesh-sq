@@ -41,7 +41,7 @@ export const navItem  = [
             label:'Digital Marketing',
             child:[
                 'SEO', 'Leads Generation', 'Email Marketing', 'Degital Marketing', 'Content Strategy',
-                'social Media Marketing'
+                'Social Media Marketing'
             ]
         },
 

@@ -5,13 +5,12 @@ import { useState } from "react";
 import SubMenu from "../subMenu";
 export default function NavItem() {
   const [dropDown, setDropDown] = useState(false)
-  console.log(dropDown);
   return (
     <>
      <div className="relative nav-item">
-        <ul className="flex gap-5">
+        <ul className="flex gap-10">
             {navItem.map((item)=>
-                <Link key={item.key} href={item.path} className={`font-bold text-md text-black hover:text-[#4d148c] ${item.key === 2 ? "after:content-['▼'] hover:slido" : '' } `} onMouseEnter={()=>{setDropDown(true)}} onMouseLeave={()=>{setDropDown(false)}}>{item.label}</Link>
+                <Link key={item.key} href={item.path} className={`text-[13px] font-semibold text-black dark:text-white hover:text-[#4d148c] monseret ${item.key === 2 ?  "after:content-['▼']" : '' } `  } onMouseEnter={()=>{setDropDown(prev =>!prev)}}  >{item.label}</Link>
             )}
 
         </ul>

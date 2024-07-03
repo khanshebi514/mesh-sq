@@ -6,17 +6,18 @@ export default function FindYourAnswer() {
 
     ]
   return (
-    <div className="flex flex-col justify-center items-center gap-5 p-5">
-        <h1 className="font-bold text-3xl text-[#4d148c] mt-5">Find the Answers You Need</h1>
+    <div className="flex flex-col justify-center items-center monseret gap-5 p-5 dark:bg-transparent dark:text-white">
+        <h1 className="font-bold text-3xl text-[#4d148c] roboto mt-5 dark:text-white">Find the Answers You Need</h1>
         
         <div>
 
         </div>
-      <Space direction="vertical" size={'middle'}>
+      <Space direction="vertical" size={'middle'} className="dark:text-white" >
          <Collapse
          collapsible="header"
          expandIconPosition="end"
          size="large"
+         
          items={
             [
                 {

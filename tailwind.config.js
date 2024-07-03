@@ -1,3 +1,4 @@
+import config from './postcss.config.mjs';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,6 +9,7 @@ module.exports = {
     "./src/**/**/*.{js,ts,jsx,tsx,mdx}",
 
   ],
+  // darkMode:'class',
   theme: {
     extend: {
       backgroundImage: {
@@ -18,8 +20,10 @@ module.exports = {
 
       content:{
         "arrow-image" : "url('./src/images/hand.webp)"
-      }
+      },
     }
   },
   plugins: [],
+  darkMode:'class'
 };
+export default config

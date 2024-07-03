@@ -13,8 +13,8 @@ import { growthCard } from '@/data/webData';
 
 export default function Compaings() {
   return (
-    <div className="w-full flex flex-col justify-center py-10 bg-white text-center items-center m-auto">
-        <h1 className="font-bold text-2xl md:text-5xl text-[#4d148c]">Campaigns Expanded by {<CountUp delay={1} duration={5} start={59} suffix="%" end={61} scrollSpyDelay={1000} redraw/> } in <span className="text-orange-600">
+    <div className="w-full flex flex-col justify-center py-10 bg-white text-center items-center m-auto dark:bg-black dark:text-white">
+        <h1 className="font-bold text-2xl md:text-5xl text-[#4d148c] dark:text-white roboto">Campaigns Expanded by {<CountUp delay={1} duration={5} start={59} suffix="%" end={61} scrollSpyDelay={1000} redraw/> } in <span className="text-orange-600">
          {<CountUp start={2020}  duration={5} end={2023}/>}    </span></h1>
 
          <div className=' w-full mt-10 md:flex justify-center items-center hidden'>

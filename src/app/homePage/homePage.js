@@ -7,7 +7,7 @@ import WhyWorkWithUS from "@/components/main-header/whyWorkWithUS";
 import Compaings from "@/ui/compaings";
 import Container from "@/ui/container";
 import Counter from "@/ui/counter";
-import CursolComponent from "@/ui/cursoel-effect/cursol-component";
+import CursolComponent from "@/ui/cursoel-effect/cursol";
 import MainCard from "@/ui/main-card";
 import ServiceWeProvide from "@/ui/serviceWeProvide";
 
@@ -18,7 +18,9 @@ export default function HomePage() {
      <MainHeader />
       <Counter />
       <ServiceWeProvide/>
+      </Container>
       <Compaings/>
+      <Container>
       <CursolComponent/>
       <WhyChooseMesh/>
       <WhyWorkWithUS/>

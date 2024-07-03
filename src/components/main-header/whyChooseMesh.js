@@ -5,10 +5,10 @@ import Button from "@/ui/button";
 
 export default function WhyChooseMesh() {
   return (
-    <section className="bg-white w-full p-10 ">
+    <section className="bg-white w-full p-10 dark:bg-slate-800 dark:text-white">
         <Row gutter={6} align={'middle'} justify={'space-between'}>
             <Col span={24} md={8} className="text-center md:text-start">
-            <h1 className="text-[#4d148c] text-5xl md:text-7xl font-bold">50%</h1>
+            <h1 className="text-[#4d148c] text-5xl md:text-7xl font-bold roboto">50%</h1>
             <p className="mt-2 font-lg text-lg">Improved time of Productivity..</p>
             </Col>
             <Col span={24} md={8} className="flex flex-col justify-center items-center">
